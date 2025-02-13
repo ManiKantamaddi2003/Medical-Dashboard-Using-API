@@ -1,0 +1,398 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    top: 18px;
+    height: 72px;
+    box-shadow: 2px 2px 2px 1px gray;
+    margin-top: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+.settings img {
+    margin-right: 10px;
+}
+
+.settings a {
+    display: block;
+    line-height: 1.5;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: lighter;
+}
+#doc{
+    color: black;
+}
+.vertical-line {
+    border-left: 2px solid gray;
+    height: 50px;
+    margin: 0 15px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly; 
+    padding: 20px;
+    gap: 20px; 
+}
+.patients-list,
+.graphs,
+.patient-detail {
+    border: 1px solid #ddd; 
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+.patient-detail{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    height: 900px;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.patients-list {
+    height: 250px;
+    overflow-y: scroll; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+
+.patients-list::-webkit-scrollbar {
+    width: 5px; 
+    position: absolute;
+    height: 750px;
+}
+
+.patients-list::-webkit-scrollbar-thumb {
+    background-color: gray; 
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.patients-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    height: 800px;
+    border-radius: 10px;
+}
+.graphs{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    height: 900px;
+    justify-content: space-between;
+    width: 650px;
+    margin-bottom: 50px;
+}
+.graph{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    border-radius: 20px;
+    height: 643px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.grp{
+    background-color: #F4F0FE;
+    height: 400px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    height: 250px;
+    border-radius: 20px;
+}
+.pics div{
+    width: 185px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: start;
+    align-items: start;
+    /* text-align: center; */
+
+}
+.pics img{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+h6{
+    margin: 0px;
+}
+.pic1{
+    background-color: #E0F3FA;
+}
+.pic2{
+    background-color: #FFE6E9;
+}
+.pic3{
+    background-color: #FFE6F1;
+}
+
+#blood-pressure, #temperature, #heart-bpm {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+  
+.dg-head{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.table{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+table {
+    border-collapse: collapse; 
+}
+
+tr {
+    border-bottom: 1px solid rgb(249, 249, 249);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 10px;
+}
+.description h2{
+    padding: 5px;
+}
+.description,.lab-results{
+    background-color: white;
+    border-radius: 20px;
+    height: 239px;
+    padding: 5px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+}
+.description ,.lab-results{
+    overflow-y: scroll; 
+    box-sizing: border-box; 
+    position: relative;
+} 
+
+
+.description::-webkit-scrollbar,.lab-results::-webkit-scrollbar {
+    width: 5px; 
+    position: absolute;
+}
+
+.description::-webkit-scrollbar-thumb,.lab-results::-webkit-scrollbar-thumb {
+    background-color: gray; 
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.description::-webkit-scrollbar-track,.lab-results::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.patients-list{
+    width: 367px;
+    height: 900px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    overflow-y: scroll;
+}
+.patients-list div{
+    margin-bottom: 15px;
+}
+.patient-details{
+    width: 367px;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+
+.patient-search {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10px; 
+    
+}
+
+.patient-search img:first-child {
+    margin-right: 10px; 
+}
+
+.patient-search span {
+    margin-right: auto; 
+    font-size: 14px; 
+}
+
+.patient-search img:last-child {
+    margin-left: auto; 
+}
+
+
+.patient-search .patient-info {
+    display: flex;
+    align-items: center;
+}
+.patient-details{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 100%;
+    
+}
+.patient-photo{
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.patient-details img{
+    width: 125px;
+    height: 125px;
+}
+.patient-inf{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.patient-inf img{
+    width:30px;
+    height: 30px;
+}
+
+patient-inf img:first-child {
+    margin-right: 10px;
+}
+
+.patient-inf span {
+    margin-right: auto; 
+    font-size: 10px; 
+}
+.patient-inf .info-button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.info-button a{
+    top: 775px;
+    left: 1289px;
+    height: 41px;
+    width: 150px;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    opacity: 3;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+    align-content: center;
+}
+.patient-reports {
+    height: 290px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    gap: 2px;
+    color: gray;
+    padding: 10px;
+}
+
+
+.patient-reports {
+    height: 300px;
+    overflow-y: scroll; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+
+.patient-reports::-webkit-scrollbar {
+    width: 5px; 
+    position: absolute;
+}
+
+.patient-reports::-webkit-scrollbar-thumb {
+    background-color: gray; 
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.patient-reports::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+.patient-report {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px; 
+    height: 40px;
+}
+.patient-rep h4 {
+    margin: 0;
+}
+.patient-report img{
+    width: 20px;
+    height: 20px;
+}
+

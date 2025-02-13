@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link rel="icon" type="image/png" href="cardiac-injection_17035428.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="favicon">
+            <img src="TestLogo.svg" alt="Logo">
+        </div>
+        <div class="home">
+            <img src="home.svg" alt="logo" height="20px" width="20px">
+            <a href="#">Overview</a>
+        </div>
+        <div>
+            <img src="group.svg" alt="logo" height="20px" width="20px">
+            <a href="#">Patients</a>
+        </div>
+        <div>
+            <img src="schedule.svg" alt="logo" height="20px" width="20px">
+            <a href="#">Schedule</a>
+        </div>
+        <div>
+            <img src="message.svg" alt="logo" height="20px" width="20px">
+            <a href="#">Message</a>
+        </div>
+        <div>
+            <img src="Transactions.svg" alt="logo" height="20px" width="20px">
+            <a href="#">Transactions</a>
+        </div>
+        <div class="settings">
+            <img src="Passport Photo.png" alt="logo" height="50px" width="50px" style="border-radius: 50%;">
+            <a id="doc"><b>Dr. Manikanta Maddhi</b><br>Doctorate of Medicine</a>
+            <div class="vertical-line"></div>
+            <div class="icons">
+                <img src="settings.svg" alt="Settings" height="30px" width="30px">
+                <img src="3dotsv.svg" alt="3 Dots" height="30px" width="30px">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="patients-list" id="patients-container">
+            <h4>Patients</h4>
+            <!-- Patients list will be dynamically populated from the API -->
+        </div>
+        <div class="graphs">
+            <div class="graph">
+                
+                <div class="grp">
+                    <h3 id="chart-title">Diagnosis History</h3>
+                    <canvas id="lineChart" width="400" height="200"></canvas>
+                </div>
+                <div class="pics">
+                    <div class="pic1">
+                        <img src="respiratory rate.svg" alt="respiratory-rate"><br>
+                        <h4>Respiratory Rate</h4>
+                        <p id="respiratory-rate">Respiratory Rate</p>
+                        <span class="metric-level" id="respiratory-rate-level">Normal</span>
+                    </div>
+                    <div class="pic2">
+                        <img src="temperature.svg" alt="temperature"><br>
+                        <h4>Temperature</h4>
+                        <p id="temperature">Temperature</p>
+                        <span class="metric-level" id="temperature-level">Normal</span>
+                    </div>
+                    <div class="pic3">
+                        <img src="HeartBPM.svg" alt="heart-rate"><br>
+                        <h4>Heart Rate</h4>
+                        <p id="heart-rate">Heart Rate</p>
+                        <span class="metric-level" id="heart-rate-level">Normal</span>
+                    </div>
+                </div>
+            </div>
+            <h2>Diagnostic List</h2>
+            <div class="description">
+                <div class="dg-head">
+                    <div><p>Problem/Diagnosis</p></div>
+                    <div><p>Description</p></div>
+                    <div><p>Status</p></div>
+                </div>
+                <div class="table">
+                    <table cellpadding="5px" cellspacing="5px" id="diagnostic-table">
+                        <!-- Data will be populated here -->
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="patient-detail">
+            <div class="patient-details">
+                <div class="patient-photo">
+                    <img id="patient-photo" src="pat4.png" alt="patient">
+                    <h2 align="center" id="patient-name"></h2>
+                </div>
+                <div class="patient-inf">
+                    <div class="patient-search">
+                        <div class="patient-info">
+                            <img src="BirthIcon.svg" alt="logo" height="40px" width="40px">
+                            <span>Date of Birth<br><b id="dob"></b></span>
+                        </div>
+                    </div>
+                    <div class="patient-search">
+                        <div class="patient-info">
+                            <img src="FemaleIcon.svg" alt="logo" height="40px" width="40px">
+                            <span>Gender<br><b id="gender"></b></span>
+                        </div>
+                    </div>
+                    <div class="patient-search">
+                        <div class="patient-info">
+                            <img src="PhoneIcon.svg" alt="logo" height="40px" width="40px">
+                            <span>Contact Info<br><b id="contact-info"></b></span>
+                        </div>
+                    </div>
+                    <div class="patient-search">
+                        <div class="patient-info">
+                            <img src="PhoneIcon.svg" alt="logo" height="40px" width="40px">
+                            <span>Emergency Contacts<br><b id="emergency-contact"></b></span>
+                        </div>
+                    </div>
+                    <div class="patient-search">
+                        <div class="patient-info">
+                            <img src="InsuranceIcon.svg" alt="logo" height="40px" width="40px">
+                            <span >Insurance Provider<br><b id="insurance-provider"></b></span>
+                        </div>
+                    </div>
+                    <div class="info-button">
+                        <a href="#">Show all Information</a>
+                    </div>
+                </div>
+            </div>
+            <h2>Lab Results</h2><br>
+            <div class="lab-results">
+                <table id="lab-result" cellpadding="10" cellspacing="5">
+                    
+                    <tbody id="lab-report-container">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
